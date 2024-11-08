@@ -1,9 +1,10 @@
-.marketPlaceSection .cardsContainer{
+.marketPlaceSection .cardsContainer {
     display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
     padding: 0 20px;
 }
+
 
 .marketPlaceSection .card {
     max-width: 100%;
@@ -16,7 +17,8 @@
     margin: 20px auto;
     overflow: hidden;
 }
-.marketPlaceSection .card .imageCont{
+
+.marketPlaceSection .card .imageCont {
     width: 100%;
     height: 180px;
     overflow: hidden;
@@ -25,9 +27,11 @@
     align-items: center;
     margin-bottom: 30px;
 }
-.marketPlaceSection .card .textCont{
+
+.marketPlaceSection .card .textCont {
     height: 350px;
 }
+
 .marketPlaceSection .card img {
     width: 200px;
     object-fit: contain;
@@ -63,7 +67,7 @@
 
 .marketPlaceSection .card .services ul {
     /* list-style: none; */
-    list-style:var(--e-global-color-primary) ;
+    list-style: var(--e-global-color-primary);
     padding-left: 10px;
     text-align: left;
 }
@@ -71,6 +75,22 @@
 .marketPlaceSection .card .services li {
     line-height: 1.6;
 }
+
 li::marker {
-    color: var(--e-global-color-primary); /* Set bullet or number color */
+    color: var(--e-global-color-primary);
+    /* Set bullet or number color */
+}
+
+
+@media(max-width:1000px) {
+
+    .marketPlaceSection .cardsContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width:500px) {
+    .marketPlaceSection .cardsContainer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
