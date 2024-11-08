@@ -1,0 +1,17 @@
+@import '../../../../../theme.css';
+
+.elementor-kit-7 {
+    --e-global-color-primary:var( --color-primary);
+    --e-global-color-secondary: var( --secondary);
+    --e-global-color-text: var(--text);
+    --e-global-color-accent: var(--accent);
+    --e-global-typography-primary-font-family: "Poppins";
+    --e-global-typography-primary-font-weight: 400;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Poppins";
+    --e-global-typography-text-font-size: 18px;
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+}
